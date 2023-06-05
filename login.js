@@ -9,8 +9,8 @@ const firebaseInicioSesion = async (email, password) => {
     try {
         const credencialesInicioSesion = await signInWithEmailAndPassword(auth, email, password)
 
-        console.log("se inicio sesion");
-        // firebaseCambioPagina();
+        console.log("se inicio sesion", credencialesInicioSesion);
+        firebaseCambioPagina();
 
     } catch (error) {
         console.log("Error:", error.message);
